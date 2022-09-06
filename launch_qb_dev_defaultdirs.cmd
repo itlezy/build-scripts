@@ -1,4 +1,7 @@
 @ECHO OFF
 
-CD /D c:\prj\p2p\qBittorent-lezy-422\build
+CD /D %~dp0
+CD ..
+CD qBittorent-lezy-422\build
+
 START "" .\qbittorrent.exe

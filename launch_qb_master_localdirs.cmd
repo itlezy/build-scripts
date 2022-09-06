@@ -18,5 +18,6 @@ SET LOCALAPPDATA=%CDD%\Home\AppData_Local
 MD "%APPDATA%"
 MD "%LOCALAPPDATA%"
 
-CD /D c:\prj\p2p\qBittorent-lezy-master\build
+CD qBittorent-lezy-master\build
+
 START "" .\qbittorrent.exe

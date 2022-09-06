@@ -5,6 +5,7 @@ CD ..
 
 CALL "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat"
 
+
 SET CMAKE=c:\prj\vcpkg\downloads\tools\cmake-3.24.0-windows\cmake-3.24.0-windows-i386\bin\cmake.exe
 SET CMAKE_TOOLCHAIN_FILE_Z=C:/prj/vcpkg/scripts/buildsystems/vcpkg.cmake
 
@@ -23,5 +24,6 @@ IF %ERRORLEVEL% NEQ 0 (
   GOTO :BEGIN
 ) ELSE (
   CD /D %~dp0
+  CD ..
   START "" %ComSpec% /C launch_qb_master_localdirs.cmd
 )
