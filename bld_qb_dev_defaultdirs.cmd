@@ -24,6 +24,5 @@ IF %ERRORLEVEL% NEQ 0 (
   GOTO :BEGIN
 ) ELSE (
   CD /D %~dp0
-  CD ..
   START "" %ComSpec% /C launch_qb_dev_defaultdirs.cmd
 )
